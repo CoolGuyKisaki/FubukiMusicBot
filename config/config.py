@@ -125,7 +125,7 @@ TG_VIDEO_FILESIZE_LIMIT = int(
 # Chceckout https://www.gbmb.org/mb-to-bytes  for converting mb to bytes
 
 
-# You'll need a Pyrogram String Session for these vars. Generate String from our session generator repl [Repl] (https://replit.com/@CoolGuyKisaki/Generate-Telegram-String-Session#main.py)
+# You'll need a Pyrogram String Session for these vars. Generate String from our session generator repl (https://replit.com/@CoolGuyKisaki/Generate-Telegram-String-Session#main.py)
 STRING1 = getenv("STRING_SESSION", None)
 STRING2 = getenv("STRING_SESSION2", None)
 STRING3 = getenv("STRING_SESSION3", None)
@@ -133,13 +133,16 @@ STRING4 = getenv("STRING_SESSION4", None)
 STRING5 = getenv("STRING_SESSION5", None)
 
 
-#  __     ___    _ _  ___  _______   __  __ _    _  _____ _____ _____   ____   ____ _______
-#  \ \   / / |  | | |/ / |/ /_   _| |  \/  | |  | |/ ____|_   _/ ____| |  _ \ / __ \__   __|
-#   \ \_/ /| |  | | ' /| ' /  | |   | \  / | |  | | (___   | || |      | |_) | |  | | | |
-#    \   / | |  | |  < |  <   | |   | |\/| | |  | |\___ \  | || |      |  _ <| |  | | | |
-#     | |  | |__| | . \| . \ _| |_  | |  | | |__| |____) |_| || |____  | |_) | |__| | | |
-#     |_|   \____/|_|\_\_|\_\_____| |_|  |_|\____/|_____/|_____\_____| |____/ \____/  |_|
-
+# _________________
+# |               |             
+# |    __________ |
+# |   |       
+# |   |___________
+# |               |
+# |   ____________|                     
+# |   |
+# |   |
+# |   |                 
 
 ### DONT TOUCH or EDIT codes after this line
 BANNED_USERS = filters.user()
