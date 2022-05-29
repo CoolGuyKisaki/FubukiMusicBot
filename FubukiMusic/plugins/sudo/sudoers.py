@@ -12,10 +12,10 @@ from pyrogram.types import Message
 
 from config import BANNED_USERS, MONGO_DB_URI, OWNER_ID
 from strings import get_command
-from FubukiMusic  import app
-from FubukiMusic .misc import SUDOERS
-from FubukiMusic .utils.database import add_sudo, remove_sudo
-from FubukiMusic .utils.decorators.language import language
+from FubukiMusic import app
+from FubukiMusic.misc import SUDOERS
+from FubukiMusic.utils.database import add_sudo, remove_sudo
+from FubukiMusic.utils.decorators.language import language
 
 # Command
 ADDSUDO_COMMAND = get_command("ADDSUDO_COMMAND")
