@@ -104,7 +104,7 @@ Config vars are basically the variables which configure or modify bot to functio
 
 - You can use upto 5 Assistant Clients ( allowing your bot to atleast work in 2000-2500 chats at a time )
 
-1. `STRING_SESSION2` : Pyrogram Session Needed, Generate string from [@YukkiStringBot](http://t.me/YukkiStringBot) in Telegram.
-2. `STRING_SESSION3` : Pyrogram Session Needed, Generate string from [@YukkiStringBot](http://t.me/YukkiStringBot) in Telegram.
-3. `STRING_SESSION4` : Pyrogram Session Needed, Generate string from [@YukkiStringBot](http://t.me/YukkiStringBot) in Telegram.
-4. `STRING_SESSION5` : Pyrogram Session Needed, Generate string from [@YukkiStringBot](http://t.me/YukkiStringBot) in Telegram.
+1. `STRING_SESSION2` : Pyrogram Session Needed, Generate string from [Replit](https://replit.com/@CoolGuyKisaki/Generate-Telegram-String-Session#main.py) in Replit.
+2. `STRING_SESSION3` : Pyrogram Session Needed, Generate string from [Replit](https://replit.com/@CoolGuyKisaki/Generate-Telegram-String-Session#main.py) in Replit.
+3. `STRING_SESSION4` : Pyrogram Session Needed, Generate string from [Replit](https://replit.com/@CoolGuyKisaki/Generate-Telegram-String-Session#main.py) in Replit.
+4. `STRING_SESSION5` : Pyrogram Session Needed, Generate string from [Replit](https://replit.com/@CoolGuyKisaki/Generate-Telegram-String-Session#main.py) in Replit.
