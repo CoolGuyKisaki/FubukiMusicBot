@@ -14,9 +14,9 @@ from pyrogram import filters
 import config
 from strings import get_command
 from FubukiMusic  import app
-from FubukiMusic .misc import SUDOERS
-from FubukiMusic .utils.database.memorydatabase import get_video_limit
-from FubukiMusic .utils.formatters import convert_bytes
+from FubukiMusic.misc import SUDOERS
+from FubukiMusic.utils.database.memorydatabase import get_video_limit
+from FubukiMusic.utils.formatters import convert_bytes
 
 VARS_COMMAND = get_command("VARS_COMMAND")
 
