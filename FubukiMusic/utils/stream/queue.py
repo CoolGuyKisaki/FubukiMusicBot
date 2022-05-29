@@ -10,7 +10,7 @@
 from typing import Union
 
 from config import autoclean, chatstats, userstats
-from YukkiMusic.misc import db
+from FubukiMusic.misc import db
 
 
 async def put_queue(
