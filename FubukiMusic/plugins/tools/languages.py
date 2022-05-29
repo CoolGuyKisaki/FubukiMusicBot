@@ -13,9 +13,9 @@ from pyrogram.types import InlineKeyboardButton, Message
 
 from config import BANNED_USERS
 from strings import get_command, get_string
-from YukkiMusic import app
-from YukkiMusic.utils.database import get_lang, set_lang
-from YukkiMusic.utils.decorators import (ActualAdminCB, language,
+from FubukiMusic import app
+from FubukiMusic.utils.database import get_lang, set_lang
+from FubukiMusic.utils.decorators import (ActualAdminCB, language,
                                          languageCB)
 
 # Languages Available
@@ -25,7 +25,7 @@ def lanuages_keyboard(_):
     keyboard = InlineKeyboard(row_width=2)
     keyboard.row(
         InlineKeyboardButton(
-            text="🏴󠁧󠁢󠁥󠁮󠁧󠁿 English",
+            text="🇺🇲 English",
             callback_data=f"languages:en",
         ),
         InlineKeyboardButton(
