@@ -24,13 +24,13 @@ from pyrogram import filters
 
 import config
 from strings import get_command
-from FubukiMusic  import app
-from FubukiMusic .misc import HAPP, SUDOERS, XCB
-from FubukiMusic .utils.database import (get_active_chats,
+from FubukiMusic import app
+from FubukiMusic.misc import HAPP, SUDOERS, XCB
+from FubukiMusic.utils.database import (get_active_chats,
                                        remove_active_chat,
                                        remove_active_video_chat)
-from FubukiMusic .utils.decorators.language import language
-from FubukiMusic .utils.pastebin import Fubukibin
+from FubukiMusic.utils.decorators.language import language
+from FubukiMusic.utils.pastebin import Fubukibin
 
 # Commands
 GETLOG_COMMAND = get_command("GETLOG_COMMAND")
