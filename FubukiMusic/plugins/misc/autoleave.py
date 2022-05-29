@@ -10,7 +10,7 @@
 import asyncio
 
 import config
-from YukkiMusic.utils.database import get_client, is_active_chat
+from FubukiMusic.utils.database import get_client, is_active_chat
 
 
 async def auto_leave():
@@ -18,7 +18,7 @@ async def auto_leave():
         while not await asyncio.sleep(
             config.AUTO_LEAVE_ASSISTANT_TIME
         ):
-            from YukkiMusic.core.userbot import assistants
+            from FubukiMusic.core.userbot import assistants
 
             for num in assistants:
                 client = await get_client(num)
