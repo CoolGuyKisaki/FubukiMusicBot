@@ -14,7 +14,7 @@ Config vars are basically the variables which configure or modify bot to functio
 5. `LOG_GROUP_ID` : You'll need a Private Group ID for this. Supergroup Needed with id starting from -100 
 6. `MUSIC_BOT_NAME` : A name for your Music bot.
 7. `OWNER_ID` : Your Owner ID for managing your bot.
-8. `STRING_SESSION` : Pyrogram Session Needed, Generate string from [String Gen Repl](http://t.me/YukkiStringBot) in Replit.
+8. `STRING_SESSION` : Pyrogram Session Needed, Generate string from [String Gen Repl](https://replit.com/@CoolGuyKisaki/Generate-Telegram-String-Session) in Replit.
 
 
 ## Non-Mandatory Vars
