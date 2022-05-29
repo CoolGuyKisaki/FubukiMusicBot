@@ -1,12 +1,3 @@
-#
-# Copyright (C) 2021-2022 by TeamYukki@Github, < https://github.com/TeamYukki >.
-#
-# This file is part of < https://github.com/TeamYukki/YukkiMusicBot > project,
-# and is released under the "GNU v3.0 License Agreement".
-# Please see < https://github.com/TeamYukki/YukkiMusicBot/blob/master/LICENSE >
-#
-# All rights reserved.
-
 import os
 import re
 
@@ -20,10 +11,10 @@ from pyrogram.types import (InlineKeyboardButton,
 from config import (BANNED_USERS, SONG_DOWNLOAD_DURATION,
                     SONG_DOWNLOAD_DURATION_LIMIT)
 from strings import get_command
-from YukkiMusic import YouTube, app
-from YukkiMusic.utils.decorators.language import language, languageCB
-from YukkiMusic.utils.formatters import convert_bytes
-from YukkiMusic.utils.inline.song import song_markup
+from FubukiMusic import YouTube, app
+from FubukiMusic.utils.decorators.language import language, languageCB
+from FubukiMusic.utils.formatters import convert_bytes
+from FubukiMusic.utils.inline.song import song_markup
 
 # Command
 SONG_COMMAND = get_command("SONG_COMMAND")
@@ -193,7 +184,7 @@ async def song_helper_cb(client, CallbackQuery, _):
             print(e)
             return await CallbackQuery.edit_message_text(_["song_7"])
         keyboard = InlineKeyboard()
-        # AVC Formats Only [ YUKKI MUSIC BOT ]
+        # AVC Formats Only [ FUBUKI MUSIC BOT ]
         done = [160, 133, 134, 135, 136, 137, 298, 299, 264, 304, 266]
         for x in formats_available:
             check = x["format"]
