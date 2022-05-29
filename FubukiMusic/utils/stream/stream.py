@@ -14,20 +14,20 @@ from typing import Union
 from pyrogram.types import InlineKeyboardMarkup
 
 import config
-from YukkiMusic import Carbon, YouTube, app
-from YukkiMusic.core.call import Yukki
-from YukkiMusic.misc import db
-from YukkiMusic.utils.database import (add_active_chat,
+from FubukiMusic import Carbon, YouTube, app
+from FubukiMusic.core.call import Fubuki
+from FubukiMusic.misc import db
+from FubukiMusic.utils.database import (add_active_chat,
                                        add_active_video_chat,
                                        is_active_chat,
                                        is_video_allowed, music_on)
-from YukkiMusic.utils.exceptions import AssistantErr
-from YukkiMusic.utils.inline.play import (stream_markup,
+from FubukiMusic.utils.exceptions import AssistantErr
+from FubukiMusic.utils.inline.play import (stream_markup,
                                           telegram_markup)
-from YukkiMusic.utils.inline.playlist import close_markup
-from YukkiMusic.utils.pastebin import Yukkibin
-from YukkiMusic.utils.stream.queue import put_queue, put_queue_index
-from YukkiMusic.utils.thumbnails import gen_thumb
+from FubukiMusic.utils.inline.playlist import close_markup
+from FubukiMusic.utils.pastebin import Fubukibin
+from FubukiMusic.utils.stream.queue import put_queue, put_queue_index
+from FubukiMusic.utils.thumbnails import gen_thumb
 
 
 async def stream(
@@ -49,7 +49,7 @@ async def stream(
         if not await is_video_allowed(chat_id):
             raise AssistantErr(_["play_6"])
     if forceplay:
-        await Yukki.force_stop_stream(chat_id)
+        await Fubuki.force_stop_stream(chat_id)
     if streamtype == "playlist":
         msg = f"{_['playlist_16']}\n\n"
         count = 0
@@ -98,7 +98,7 @@ async def stream(
                     )
                 except:
                     raise AssistantErr(_["play_16"])
-                await Yukki.join_call(
+                await Fubuki.join_call(
                     chat_id, original_chat_id, file_path, video=status
                 )
                 await add_active_chat(chat_id)
@@ -131,7 +131,7 @@ async def stream(
         if count == 0:
             return
         else:
-            link = await Yukkibin(msg)
+            link = await Fubukibin(msg)
             lines = msg.count("\n")
             if lines >= 17:
                 car = os.linesep.join(msg.split(os.linesep)[:17])
@@ -181,7 +181,7 @@ async def stream(
         else:
             if not forceplay:
                 db[chat_id] = []
-            await Yukki.join_call(
+            await Fubuki.join_call(
                 chat_id, original_chat_id, file_path, video=status
             )
             await add_active_chat(chat_id)
@@ -237,7 +237,7 @@ async def stream(
         else:
             if not forceplay:
                 db[chat_id] = []
-            await Yukki.join_call(
+            await Fubuki.join_call(
                 chat_id, original_chat_id, file_path, video=None
             )
             await put_queue(
@@ -293,7 +293,7 @@ async def stream(
         else:
             if not forceplay:
                 db[chat_id] = []
-            await Yukki.join_call(
+            await Fubuki.join_call(
                 chat_id, original_chat_id, file_path, video=status
             )
             await add_active_chat(chat_id)
@@ -354,7 +354,7 @@ async def stream(
             n, file_path = await YouTube.video(link)
             if n == 0:
                 raise AssistantErr(_["str_3"])
-            await Yukki.join_call(
+            await Fubuki.join_call(
                 chat_id, original_chat_id, file_path, video=status
             )
             await add_active_chat(chat_id)
@@ -408,7 +408,7 @@ async def stream(
         else:
             if not forceplay:
                 db[chat_id] = []
-            await Yukki.join_call(
+            await Fubuki.join_call(
                 chat_id, original_chat_id, link, video=True
             )
             await add_active_chat(chat_id)
