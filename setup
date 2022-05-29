@@ -1,4 +1,4 @@
-### Yukki Music Bot Installer
+### Fubuki Music Bot Installer
 
 cgreen='\033[0;32m'
 cyellow='\033[0;33m'
@@ -25,7 +25,7 @@ node(){
 
 
 repo(){
-	git clone https://github.com/notreallyshikhar/YukkiMusicBot &&  cd YukkiMusicBot
+	git clone https://github.com/CoolGuyKisaki/FubukiMusic &&  cd FubukiMusic
 }
 
 
