@@ -21,16 +21,16 @@ from pytgcalls.__version__ import __version__ as pytgver
 import config
 from config import BANNED_USERS, MUSIC_BOT_NAME
 from strings import get_command
-from YukkiMusic import YouTube, app
-from YukkiMusic.core.userbot import assistants
-from YukkiMusic.misc import SUDOERS, pymongodb
-from YukkiMusic.utils.database import (get_global_tops,
+from FubukiMusic import YouTube, app
+from FubukiMusic.core.userbot import assistants
+from FubukiMusic.misc import SUDOERS, pymongodb
+from FubukiMusic.utils.database import (get_global_tops,
                                        get_particulars, get_queries,
                                        get_served_chats,
                                        get_served_users, get_sudoers,
                                        get_top_chats, get_topp_users)
-from YukkiMusic.utils.decorators.language import language, languageCB
-from YukkiMusic.utils.inline.stats import (back_stats_buttons,
+from FubukiMusic.utils.decorators.language import language, languageCB
+from FubukiMusic.utils.inline.stats import (back_stats_buttons,
                                            back_stats_markup,
                                            get_stats_markup,
                                            overallback_stats_markup,
