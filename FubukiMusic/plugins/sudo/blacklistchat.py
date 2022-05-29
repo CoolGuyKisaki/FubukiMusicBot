@@ -12,12 +12,12 @@ from pyrogram.types import Message
 
 from config import BANNED_USERS
 from strings import get_command
-from YukkiMusic import app
-from YukkiMusic.misc import SUDOERS
-from YukkiMusic.utils.database import (blacklist_chat,
+from FubukiMusic import app
+from FubukiMusic.misc import SUDOERS
+from FubukiMusic.utils.database import (blacklist_chat,
                                        blacklisted_chats,
                                        whitelist_chat)
-from YukkiMusic.utils.decorators.language import language
+from FubukiMusic.utils.decorators.language import language
 
 # Commands
 
