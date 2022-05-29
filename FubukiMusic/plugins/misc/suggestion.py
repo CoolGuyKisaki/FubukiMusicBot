@@ -15,9 +15,9 @@ from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup
 
 import config
 from config import clean
-from YukkiMusic import app
-from YukkiMusic.utils.database import get_served_chats
-from YukkiMusic.utils.database.mongodatabase import \
+from FubukiMusic import app
+from FubukiMusic.utils.database import get_served_chats
+from FubukiMusic.utils.database.mongodatabase import \
     get_private_served_chats
 
 LEAVE_TIME = config.AUTO_SUGGESTION_TIME
