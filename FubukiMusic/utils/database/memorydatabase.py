@@ -10,7 +10,7 @@
 
 import config
 from config import PRIVATE_BOT_MODE
-from YukkiMusic.core.mongo import mongodb
+from FubukiMusic.core.mongo import mongodb
 
 channeldb = mongodb.cplaymode
 commanddb = mongodb.commands
@@ -19,7 +19,7 @@ playmodedb = mongodb.playmode
 playtypedb = mongodb.playtypedb
 langdb = mongodb.language
 authdb = mongodb.adminauth
-videodb = mongodb.yukkivideocalls
+videodb = mongodb.fubukivideocalls
 onoffdb = mongodb.onoffper
 
 # Shifting to memory [ mongo sucks often]
