@@ -12,10 +12,10 @@ from pyrogram.types import Message
 
 from config import BANNED_USERS, adminlist
 from strings import get_command
-from YukkiMusic import app
-from YukkiMusic.utils.database import get_authuser_names
-from YukkiMusic.utils.decorators import language
-from YukkiMusic.utils.formatters import alpha_to_int
+from FubukiMusic import app
+from FubukiMusic.utils.database import get_authuser_names
+from FubukiMusic.utils.decorators import language
+from FubukiMusic.utils.formatters import alpha_to_int
 
 ### Multi-Lang Commands
 RELOAD_COMMAND = get_command("RELOAD_COMMAND")
