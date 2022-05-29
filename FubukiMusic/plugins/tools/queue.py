@@ -16,11 +16,11 @@ from pyrogram.types import Message
 
 from config import BANNED_USERS
 from strings import get_command
-from YukkiMusic import Carbon, app
-from YukkiMusic.misc import db
-from YukkiMusic.utils.database import get_cmode, is_active_chat
-from YukkiMusic.utils.decorators.language import language
-from YukkiMusic.utils.pastebin import Yukkibin
+from FubukiMusic import Carbon, app
+from FubukiMusic.misc import db
+from FubukiMusic.utils.database import get_cmode, is_active_chat
+from FubukiMusic.utils.decorators.language import language
+from FubukiMusic.utils.pastebin import Fubukibin
 
 ###Commands
 QUEUE_COMMAND = get_command("QUEUE_COMMAND")
