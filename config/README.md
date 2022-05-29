@@ -1,11 +1,11 @@
-# Yukki Music Bot Configs
+# Fubuki Music Bot Configs
 
 Config vars are basically the variables which configure or modify bot to function, which are the basic necessities of plugins or code to work. You have to set the proper mandatory vars to make it functional and to start the basic feature of bot.
 
 
 ## Mandatory Vars
 
-- These are the minimum required vars need to setup to make Yukki Music Bot functional.
+- These are the minimum required vars need to setup to make Fubuki Music Bot Work.
 
 1. `API_ID` : Get it from my.telegram.org 
 2. `API_HASH`  : Get it from my.telegram.org 
@@ -14,7 +14,7 @@ Config vars are basically the variables which configure or modify bot to functio
 5. `LOG_GROUP_ID` : You'll need a Private Group ID for this. Supergroup Needed with id starting from -100 
 6. `MUSIC_BOT_NAME` : A name for your Music bot.
 7. `OWNER_ID` : Your Owner ID for managing your bot.
-8. `STRING_SESSION` : Pyrogram Session Needed, Generate string from [@YukkiStringBot](http://t.me/YukkiStringBot) in Telegram.
+8. `STRING_SESSION` : Pyrogram Session Needed, Generate string from [String Gen Repl](http://t.me/YukkiStringBot) in Replit.
 
 
 ## Non-Mandatory Vars
@@ -54,7 +54,7 @@ Config vars are basically the variables which configure or modify bot to functio
 
 ## Spotify Vars
 
-- You can play tracks or playlists from spotify from Yukki Music bot
+- You can play tracks or playlists from spotify from Fubuki Music bot
 - You'll need these two vars to make spotify play working. This is not essential , you can leave them blank if you want.
 
 1. `SPOTIFY_CLIENT_ID` : Get it from https://developer.spotify.com/dashboard 
@@ -72,7 +72,7 @@ Config vars are basically the variables which configure or modify bot to functio
 
 ## Custom Repo Vars
 
-- If you plan to use Yukki Music Bot with your own customized or modified code.
+- If you plan to use Fubuki Music Bot with your own customized or modified code.
 
 1. `UPSTREAM_REPO` : Your Upstream Repo URL or Forked Repo.
 2. `UPSTREAM_BRANCH` : Default Branch of your Upstream Repo URL or Forked Repo. 
@@ -83,8 +83,8 @@ Config vars are basically the variables which configure or modify bot to functio
 
 ## Images/Thumbnail Vars
 
-- You can change images which are used in Yukki Music Bot.
-- You can generate telegaph links from [@YukkiTelegraphBot](http://t.me/YukkiTelegraphBot) and use it here.
+- You can change images which are used in Fubuki Music Bot.
+- You can generate telegaph links from [@Gabi_Braun_Robot](http://t.me/Gabi_Braun_Robot) by doing /tgm and use it here.
 
 1. `START_IMG_URL` : Image which comes on /start command in private messages of bot.
 2. `PING_IMG_URL` : Image which comes on /ping command of bot.
