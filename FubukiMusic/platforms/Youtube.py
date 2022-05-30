@@ -18,8 +18,8 @@ from pyrogram.types import Message
 from youtubesearchpython.__future__ import VideosSearch
 
 import config
-from YukkiMusic.utils.database import is_on_off
-from YukkiMusic.utils.formatters import time_to_seconds
+from FubukiMusic.utils.database import is_on_off
+from FubukiMusic.utils.formatters import time_to_seconds
 
 
 async def shell_cmd(cmd):
