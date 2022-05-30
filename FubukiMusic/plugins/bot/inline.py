@@ -1,20 +1,11 @@
-#
-# Copyright (C) 2021-2022 by TeamYukki@Github, < https://github.com/TeamYukki >.
-#
-# This file is part of < https://github.com/TeamYukki/YukkiMusicBot > project,
-# and is released under the "GNU v3.0 License Agreement".
-# Please see < https://github.com/TeamYukki/YukkiMusicBot/blob/master/LICENSE >
-#
-# All rights reserved.
-
 from pyrogram.types import (InlineKeyboardButton,
                             InlineKeyboardMarkup,
                             InlineQueryResultPhoto)
 from youtubesearchpython.__future__ import VideosSearch
 
 from config import BANNED_USERS, MUSIC_BOT_NAME
-from YukkiMusic import app
-from YukkiMusic.utils.inlinequery import answer
+from FubukiMusic import app
+from FubukiMusic.utils.inlinequery import answer
 
 
 @app.on_inline_query(~BANNED_USERS)
