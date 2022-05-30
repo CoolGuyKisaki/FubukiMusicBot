@@ -25,20 +25,20 @@ from pytgcalls.types.stream import StreamAudioEnded
 
 import config
 from strings import get_string
-from YukkiMusic import LOGGER, YouTube, app
-from YukkiMusic.misc import db
-from YukkiMusic.utils.database import (get_assistant,
+from FubukiMusic import LOGGER, YouTube, app
+from FubukiMusic.misc import db
+from FubukiMusic.utils.database import (get_assistant,
                                        get_audio_bitrate, get_lang,
                                        get_loop, get_video_bitrate,
                                        group_assistant, mute_off,
                                        remove_active_chat,
                                        remove_active_video_chat,
                                        set_loop)
-from YukkiMusic.utils.exceptions import AssistantErr
-from YukkiMusic.utils.inline.play import (stream_markup,
+from FubukiMusic.utils.exceptions import AssistantErr
+from FubukiMusic.utils.inline.play import (stream_markup,
                                           telegram_markup)
-from YukkiMusic.utils.stream.autoclear import auto_clean
-from YukkiMusic.utils.thumbnails import gen_thumb
+from FubukiMusic.utils.stream.autoclear import auto_clean
+from FubukiMusic.utils.thumbnails import gen_thumb
 
 
 async def _clear_(chat_id):
@@ -474,4 +474,4 @@ class Call(PyTgCalls):
             await self.change_stream(client, update.chat_id)
 
 
-Yukki = Call()
+Fubuki = Call()
