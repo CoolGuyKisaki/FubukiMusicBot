@@ -1,12 +1,3 @@
-#
-# Copyright (C) 2021-2022 by TeamYukki@Github, < https://github.com/TeamYukki >.
-#
-# This file is part of < https://github.com/TeamYukki/YukkiMusicBot > project,
-# and is released under the "GNU v3.0 License Agreement".
-# Please see < https://github.com/TeamYukki/YukkiMusicBot/blob/master/LICENSE >
-#
-# All rights reserved.
-
 from pyrogram import filters
 from pyrogram.errors import MessageNotModified
 from pyrogram.types import (CallbackQuery, InlineKeyboardButton,
@@ -15,8 +6,8 @@ from pyrogram.types import (CallbackQuery, InlineKeyboardButton,
 from config import (BANNED_USERS, CLEANMODE_DELETE_MINS,
                     MUSIC_BOT_NAME, OWNER_ID)
 from strings import get_command
-from YukkiMusic import app
-from YukkiMusic.utils.database import (add_nonadmin_chat,
+from FubukiMusic import app
+from FubukiMusic.utils.database import (add_nonadmin_chat,
                                        cleanmode_off, cleanmode_on,
                                        commanddelete_off,
                                        commanddelete_on,
@@ -31,13 +22,13 @@ from YukkiMusic.utils.database import (add_nonadmin_chat,
                                        save_audio_bitrate,
                                        save_video_bitrate,
                                        set_playmode, set_playtype)
-from YukkiMusic.utils.decorators.admins import ActualAdminCB
-from YukkiMusic.utils.decorators.language import language, languageCB
-from YukkiMusic.utils.inline.settings import (
+from FubukiMusic.utils.decorators.admins import ActualAdminCB
+from FubukiMusic.utils.decorators.language import language, languageCB
+from FubukiMusic.utils.inline.settings import (
     audio_quality_markup, auth_users_markup,
     cleanmode_settings_markup, playmode_users_markup, setting_markup,
     video_quality_markup)
-from YukkiMusic.utils.inline.start import private_panel
+from FubukiMusic.utils.inline.start import private_panel
 
 ### Command
 SETTINGS_COMMAND = get_command("SETTINGS_COMMAND")
